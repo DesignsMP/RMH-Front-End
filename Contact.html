@@ -7,7 +7,7 @@
             width: 500px;
         }
         .container {
-            font-size: 20px;
+            font-size: 36px;
             background: rgb(253, 253, 181);
             border: 5px solid #990011;
             padding: 12px;
@@ -31,19 +31,29 @@
         nav li { display: inline;
                 text-decoration: none;
         }
+    
 @media /*Tablet*/ only screen and (max-width: 1024px)
     {
         .contactInfo{
             width: 400px;
+            font-size: 3vw;
         }
 }
 @media /*Mobile*/ only screen and (max-width: 786px)
     {
         .contactInfo{
-            width: 200px;
+            width: 250px;
+            text-align: center;
+            font-size: calc(16px + 1vw);
         }
         .container{
-            grid-template-columns: 100%;
+            display: inline-block;
+
+        }
+        .center{ 
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
         }
 }
 
@@ -52,7 +62,7 @@
 <title>Page Title Goes Here</title>
 <meta charset="utf-8">
 </head>
-<body>
+<body class="center">
     <div id="wrapper">
  <header>
     <h1>Rebecca Morrison House</h1>
@@ -60,11 +70,11 @@
         <nav>
             <ul>
             <li><a href="index.html">Home</a> | </li>
-            <li><a href="about.html">Placeholder</a> | </li>
-            <li><a href="services.html">Placeholder</a> | </li>
-            <li><a href="projects.html">Placeholder</a> | </li>
-            <li><a href="production.html">Placeholder</a> | </li>
-            <li><a href="contact.html">Placeholder</a></li>
+            <li><a href="about.html">About</a> | </li>
+            <li><a href="services.html">Services</a> | </li>
+            <li><a href="projects.html">Projects</a> | </li>
+            <li><a href="production.html">Production</a> | </li>
+            <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </div>
