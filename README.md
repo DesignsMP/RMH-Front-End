@@ -1,6 +1,10 @@
 # RMH-Front-End
 Front End for the Rebecca Morrison House
 <h3> All the contributions Matt made to the project</h3>
+  <ul>
+    <li>Rooms views</li>
+    <li>Routes initial setup</li>
+  </ul>
 <h3> All the contributions Jordan made to the project</h3>
 <h3> All the contributions Wes made to the project</h3>
 <h3> All the contributions Gannon made to the project</h3>
