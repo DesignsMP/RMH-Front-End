@@ -1,0 +1,28 @@
+<form action="/admin/Room/{{_id}}/update" method="POST">
+	<input name="_id" type="hidden" id="_id" value={{_id}}>
+	<label for="roomNum">Room Number:</label><br>
+	<input name="roomNum" type="number" id="roomNum" value="{{data.roomNum}}"><br><br>
+
+	<label for="building">Building Num:</label><br>
+	<input type="radio" name="building" value="1">Building 1<br>
+	<input type="radio" name="building" value="2">Building 2<br>
+	
+	<label for="handicap">Handicap Access:</label><br>
+	<input type="radio" name="handicap" value="Yes">Yes<br>
+	<input type="radio" name="handicap" value="No">No<br>
+	
+	<label for="status">Room Status</label><br>
+	<input type="radio" name="status" value="Available">Available<br>
+	<input type="radio" name="status" value="Maintenence">Under Maintenence<br>
+	<input type="radio" name="status" value="Unavailable">Unavailable<br>
+	<input type="radio" name="status" value="Other">Other<br>
+	
+	<input type="submit" value="Update Room"><br>
+	
+	
+</form>
+	{{#if errors}}
+    {{#each errors}}
+	<p>{{this.msg}}</p>
+	{{/each}}
+	{{/if}}
