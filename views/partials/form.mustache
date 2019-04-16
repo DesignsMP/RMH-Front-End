@@ -1,0 +1,61 @@
+<style>
+        .accordion {
+            background-color: #eee;
+            color: #444;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+            transition: 0.4s;
+}
+        .panel {
+            padding: 0 18px;
+            display: none;
+            background-color: white;
+            overflow: hidden;
+}
+        .active, .accordion:hover {
+  background-color: #ccc; 
+}
+
+</style>
+
+
+     <button class="accordion">New Guest</button>
+     <div class="panel">
+        <form>
+         First name:<br>
+            <input type="text" name="firstname" value="">
+  <br>
+        Last name:<br>
+            <input type="text" name="lastname" value="">
+  <br><br>
+        <input type="submit" value="Submit">
+        </form>
+     </div> 
+
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+
+
+
+
+
