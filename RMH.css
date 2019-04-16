@@ -15,6 +15,29 @@
             grid-row-gap: 15px;
         }
  /* CSS for Contact Page ends here*/
+ /* CSS for Guest Page starts here*/
+.guestInfo {
+            font-size: 20px
+        }
+        
+        .grid-container {
+            background: rgb(253, 253, 181);
+            border: 5px solid #990011;
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            grid-gap: 10px;
+            padding: 10px;
+}
+        .grid-container > div {
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid black;
+            text-align: center;
+}
+        .grid-header {
+            font-size: 30px;
+            font-weight: bold;
+        }
+ /* CSS for Guest Page ends here*/
  /* CSS for all pages starts here*/
         body {
         background: darkseagreen;
@@ -31,6 +54,11 @@
         nav li { display: inline;
                 text-decoration: none;
         }
+.button {
+    background: white;
+    text-decoration: none;
+    border: 3px solid #990011;
+}
  /* CSS for all pages starts here*/   
 @media /*Tablet*/ only screen and (max-width: 1024px)
 /* CSS for Contact Page starts here*/
@@ -39,8 +67,15 @@
             width: 400px;
             font-size: 3vw;
         }
-}
+
  /* CSS for Contact Page ends here*/
+ /* CSS for Guest Page starts here*/
+        .guestInfo{
+            width: 400px;
+            font-size: 3vw;
+        }
+ /* CSS for Guest Page ends here*/
+}
 @media /*Mobile*/ only screen and (max-width: 786px)
 /* CSS for Contact Page starts here*/
     {
@@ -55,5 +90,15 @@
         .center{ 
         text-align: center;
         }
-}
+
  /* CSS for Contact Page ends here*/
+ /* CSS for Guest Page starts here*/
+.guestInfo{
+            width: 250px;
+            text-align: center;
+        }
+        .grid-container{
+            display: inline-block;
+        }
+ /* CSS for Guest Page ends here*/
+}
