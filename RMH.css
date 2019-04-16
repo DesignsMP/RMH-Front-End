@@ -43,8 +43,8 @@
         background: darkseagreen;
         color: black;
     }
-    nav a { text-decoration: none; }
-        nav a:link { color : rgba(27, 44, 194, 0.993); }
+        nav a { text-decoration: none; }
+        nav a:link { color : maroon; }
         nav a:hover{ color : #FFFFFF; 
                 font-weight: bold;}
         nav ul { list-style-type: none;
