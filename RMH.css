@@ -38,6 +38,11 @@
             font-weight: bold;
         }
  /* CSS for Guest Page ends here*/
+ /* CSS for Index Page starts here*/
+.indexContainer {
+    font-size: 36px;
+}
+ /* CSS for Index Page ends here*/
  /* CSS for all pages starts here*/
         body {
         background: darkseagreen;
