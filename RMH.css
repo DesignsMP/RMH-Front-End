@@ -1,8 +1,10 @@
-/* Template style sheet for the Rebecca Morrison House, can be customized to fit a pages needs.
-        /*.contactInfo {
+/* Template style sheet for the Rebecca Morrison House, can be customized to fit a pages needs.*/   
+     
+/* CSS for Contact Page starts here*/
+.contactInfo {
             width: 500px;
-        }*/
-       /* .container {
+        }
+       .contactContainer {
             font-size: 36px;
             background: rgb(253, 253, 181);
             border: 5px solid #990011;
@@ -11,7 +13,9 @@
             grid-template-columns: repeat(2,minmax(200px,500px));
             grid-column-gap: 30px;
             grid-row-gap: 15px;
-        }*/
+        }
+ /* CSS for Contact Page ends here*/
+ /* CSS for all pages starts here*/
         body {
         background: darkseagreen;
         color: black;
@@ -27,25 +31,29 @@
         nav li { display: inline;
                 text-decoration: none;
         }
-    
+ /* CSS for all pages starts here*/   
 @media /*Tablet*/ only screen and (max-width: 1024px)
+/* CSS for Contact Page starts here*/
     {
         .contactInfo{
             width: 400px;
             font-size: 3vw;
         }
 }
+ /* CSS for Contact Page ends here*/
 @media /*Mobile*/ only screen and (max-width: 786px)
+/* CSS for Contact Page starts here*/
     {
-        /*.contactInfo{
+        .contactInfo{
             width: 250px;
             text-align: center;
             font-size: calc(16px + 1vw);
         }
-        .container{
+        .contactContainer{
             display: inline-block;
-        }*/
+        }
         .center{ 
         text-align: center;
         }
 }
+ /* CSS for Contact Page ends here*/
