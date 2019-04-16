@@ -13,4 +13,5 @@ Front End for the Rebecca Morrison House
     <li>Group Communications Leader</li>
     <li>Creator of Github Repository</li>
     <li>Created the Contact.html page</li>
+    <li>Created the RMH.css</li>
   </ul>
