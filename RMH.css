@@ -44,6 +44,7 @@
 }
  /* CSS for Index Page ends here*/
  /* CSS for Report Page starts here*/
+ /* Convert grid into a table*/
     .reportGridContainer{
         background: rgb(253, 253, 181);
         border: 5px solid #990011;
