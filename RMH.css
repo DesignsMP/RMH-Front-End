@@ -43,13 +43,34 @@
     font-size: 36px;
 }
  /* CSS for Index Page ends here*/
+ /* CSS for Report Page starts here*/
+    .reportGridContainer{
+        background: rgb(253, 253, 181);
+        border: 5px solid #990011;
+        display: grid;
+        grid-template-columns: repeat( 2, minmax(600px, 100px));
+        padding: 0px;
+    }
+    .report-header {
+        font-size: 20px;
+        font-weight: bold;
+        border-right: 3px solid #990011;
+        padding-bottom: 10px;
+        content: 10px;
+    }
+    .reportInfo {
+        font-size: 20px;
+    }
+ /* CSS for Report Page ends here*/
  /* CSS for all pages starts here*/
         body {
         background: darkseagreen;
         color: black;
     }
-        nav a { text-decoration: none; }
-        nav a:link { color : maroon; }
+        nav a { text-decoration: none; 
+                       
+        }
+        nav a:link { color : maroon;}
         nav a:hover{ color : #FFFFFF; 
                 font-weight: bold;}
         nav ul { list-style-type: none;
