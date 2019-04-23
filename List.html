@@ -34,86 +34,84 @@
     
     </div>
     <p>
-        <input list="Check-In/Check-Out">
-            <form id="Check-In/Check-Out">
-                <label for="name">Guest Name</label>
-                <input type="text" name="Guest Name" id="Cell Phone" value="Guest Name"></input>
+        <form id="Check-In/Check-Out" id="guestform" action="URL" method="post" target="_top">
+            <label for="name">Guest Name:</label>
+            <input type="text" name="Guest Name" id="Cell Phone" placeholder="Guest Name" autofocus></input><br><br>
 
-                <label for="Cell Phone">Cell Phone</label>
-                <input type="tel" value="Cell Phone" max="11" name="Cell Phone" id="Cell Phone"></input>
+            <label for="Cell Phone">Cell Phone:</label>
+            <input type="tel" name="Cell Phone" id="Cell Phone" placeholder="Cell Phone" maxlength="11"></input><br><br>
 
-                <label for="Home Phone">Home Phone</label>
-                <input type="tel" value="Home Phone" max="11" name="Home Phone" id="Home Phone"></input>
+            <label for="Home Phone">Home Phone:</label>
+            <input type="tel" name="Home Phone" id="Home Phone" placeholder="Home Phone" maxlength="11"></input><br><br>
 
-                <label for="Home Address">Home Address</label>
-                <input type="text" value="Home Address" name="Home Address" id="Home Address"></input>
+            <label for="Home Address">Home Address:</label>
+            <input type="text" name="Home Address" id="Home Address" placeholder="Home Address"></input><br><br>
 
-                <label for="City">City</label>
-                <input type="text" value="City" name="City" id="City"></input>
+            <label for="City">City:</label>
+            <input type="text" name="City" id="City" placeholder="City"></input><br><br>
 
-                <label for="State">State</label>
-                <input type="text" value="State" max="2" name="State" id="State"></input>
+            <label for="State">State:</label>
+            <input type="text" name="State" id="State" placeholder="State" maxlength="2"></input><br><br>
 
-                <label for="Zip Code">Zip Code</label>
-                <input type="text" value="Zip Code" name="Zip Code" id="Zip Code"></input>
+            <label for="Zip Code">Zip Code:</label>
+            <input type="text" name="Zip Code" id="Zip Code" placeholder="Zip Code"></input><br><br>
 
-                <label for="Emergency Contact"></label>
-                <input type="text" value="Emergency Contact" name="Emergency Contact" id="Emergency Contact"></input>
+            <label for="Emergency Contact">Emergency Contact:</label>
+            <input type="text" name="Emergency Contact" id="Emergency Contact" placeholder="Emergency Contact"></input><br><br>
 
-                <label for="Emergency Contact Phone Number"></label>
-                <input type="tel" value="Emergency Contact Phone Number" max="11" name="Emergency Contact Phone Number" id="Emergency Contact Phone Number"></input>
+            <label for="Emergency Contact Phone Number">Emergency Contact Phone Number:</label>
+            <input type="tel" name="Emergency Contact Phone Number" id="Emergency Contact Phone Number" maxlength="11"></input><br><br>
 
-                <label for="Registered By"></label>
-                <input type="text" value="Registered By" name="Registered By" id="Registered By"></input>
+            <label for="Registered By">Registered by:</label>
+            <input type="text" name="Registered By" id="Registered By" placeholder="Registered By"></input><br><br>
 
-                <label for="Date Checked In">Date Checked In</label>
-                <input type="date" value="Date Checked In" name="Date Checked In" id="Date Checked In"></input>
+            <label for="Date Checked In">Date Checked In:</label>
+            <input type="datetime-local" name="Date Checked In" id="Date Checked In" placeholder="Date Checked In"></input><br><br>
 
-                <label for="Date Checked Out">Date Checked Out</label>
-                <input type="date" value="Date Checked Out" name="Date Checked Out" id="Date Checked Out"></input>
+            <label for="Date Checked Out">Date Checked Out:</label>
+            <input type="datetime-local" name="Date Checked Out" id="Date Checked Out" placeholder="Date Checked Out"></input><br><br>
 
-                <label for="MH Room Number">MH Room Number</label>
-                <input type="number" value="MH Room Number" name="MH Room Number" id="MH Room Number"></input>
+            <label for="RMH Room Number">RMH Room Number:</label>
+            <input type="number" name="RMH Room Number" id="RMH Room Number" placeholder="RMH Room Number"></input><br><br>
 
-                <label for="Room Guest(s)">Room Guest(s)</label>
-                <input type="text" value="Room Guest(s)" name="Room Guest(s)" id="Room Guest(s)"></input>
+            <label for="Room Guest(s)">Room Guest(s):</label>
+            <input type="text" name="Room Guest(s)" id="Room Guest(s)" placeholder="Room Guest(s)"></input><br><br>
 
-                <label for="Patient Name/Relationship">Patient Name/Relationship</label>
-                <input type="text" value="Patient Name/Relationship" name="Patient Name/Relationship" id="Patient Name/Relationship"></input>
+            <label for="Patient Name/Relationship">Patient Name/Relationship:</label>
+            <input type="text" name="Patient Name/Relationship" id="Patient Name/Relationship" placeholder="Patient Name/Relationship"></input><br><br>
 
-                <label for="Patient Room Number">Patient Room Number</label>
-                <input type="number" value="Patient Room Number" name="Patient Room Number" id="Patient Room Number"></input>
+            <label for="Patient Room Number">Patient Room Number:</label>
+            <input type="number" name="Patient Room Number" id="Patient Room Number" placeholder="Patient Room Number"></input><br><br>
 
-                <label for="Key Deposit">Key Deposit?</label>
-                <input type="checkbox" value="Key Deposit" name="Key Deposit" id="Key Deposit"></input>
+            <label for="Cash">Cash?</label>
+            <input type="checkbox" name="Cash" id="Cash" placeholder="Cash"></input><br><br>
 
-                <label for="Cash">Cash?</label>
-                <input type="checkbox" value="Cash" name="Cash" id="Cash"></input>
+            <label for="Check">Check?</label>
+            <input type="checkbox" name="Check" id="Check" placeholder="Check"></input><br><br>
 
-                <label for="Check">Check?</label>
-                <input type="checkbox" value="Check" name="Check" id="Check"></input>
+            <label for="Credit/Debit">Credit/Debit?</label>
+            <input type="checkbox" name="Credit/Debit" id="Credit/Debit" placeholder="Credit/Debit"></input><br><br>
 
-                <label for="Credit/Debit">Credit/Debit?</label>
-                <input type="checkbox" value="Credit/Debit" name="Credit/Debit" id="Credit/Debit"></input>
+            <label for="Number of Keys Issued">Number of Keys Issued:</label>
+            <input type="number" name="Number of Keys Issued" id="Number of Keys Issued" placeholder="Number of Keys Issued"></input><br><br>
 
-                <label for="Number of Keys Issued">Number of Keys Issued</label>
-                <input type="number" value="Number of Keys Issued" name="Number of Keys Issued" id="Number of Keys Issued"></input>
+            <label for="Donations Made">Donations Made:</label>
+            <input type="number" name="Donations Made" id="Donations Made" placeholder="Donations Made" step="1"></input><br><br>
 
-                <label for="Donations Made">Donations Made</label>
-                <input type="number" step="number" value="Donations Made" name="Donations Made" id="Donations Made"></input>
+            <label for="Items on Loan">Items on Loan?</label>
+            <input type="text" name="Items on Loan" id="Items on Loan" placeholder="Items on Loan"></input><br><br>
 
-                <label for="Items on Loan">Items on Loan?</label>
-                <input type="text" value="Items on Loan" name="Items on Loan" id="Items on Loan"></input>
+            <label for="Comments">Comments:</label>
+            <input type="text" name="Comments" id="Comments" placeholder="Comments"></input><br><br>
 
-                <label for="Comments">Comments</label>
-                <input type="text" value="Comments" name="Comments" id="Comments"></input>
+            <label for="Vehicle Type">Vehicle Type:</label>
+            <input type="text" name="Vehicle Type" id="Vehicle Type" placeholder="Vehicle Type"></input><br><br>
 
-                <label for="Vehicle Type">Vehicle Type</label>
-                <input type="text" value="Vehicle Type" name="Vehicle Type" id="Vehicle Type"></input>
+            <label for="Plate Number">Plate Number:</label>
+            <input type="text" name="Plate Number" id="Plate Number" placeholder="Plate Number"></input><br><br>
 
-                <label for="Plate Number">Plate Number</label>
-                <input type="text" value="Plate Number" name="Plate Number" id="Plate Number"></input>
-            </form>
+            <input type="submit" value="Search">
+        </form>
     </p>
     <br>
     <br>

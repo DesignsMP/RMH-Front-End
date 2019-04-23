@@ -1,0 +1,6 @@
+<h2>Review before Deleting</h2>
+<h2>Room ID: {{room._id}}</h2>
+<p>Room Number: {{room.roomNum}}</p>
+<p>Time: {{room.time}}</p>
+<form action="/admin/Room/{{room._id}}/delete" method="POST">
+<input type="submit" value="Delete Current Room?"><br>
