@@ -1,0 +1,103 @@
+/* Template style sheet for the Rebecca Morrison House, can be customized to fit a pages needs.*/   
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: rgb(253, 253, 181);
+  color:seagreen;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+/* CSS for Contact Page starts here*/
+
+.contactInfo {
+            width: 500px;
+        }
+       .contactContainer {
+            font-size: 36px;
+            background: rgb(253, 253, 181);
+            border: 5px solid #990011;
+            padding: 12px;
+            display: grid;
+            grid-template-columns: repeat(2,minmax(200px,500px));
+            grid-column-gap: 30px;
+            grid-row-gap: 15px;
+        }
+ /* CSS for Contact Page ends here*/
+ /* CSS for all pages starts here*/
+        body {
+        background: darkseagreen;
+        color: black;
+    }
+    nav a { text-decoration: none; }
+        nav a:link { color : rgba(27, 44, 194, 0.993); }
+        nav a:hover{ color : #FFFFFF; 
+                font-weight: bold;}
+        nav ul { list-style-type: none;
+       margin: 0;
+	   padding-left: 0;
+            }
+        nav li { display: inline;
+                text-decoration: none;
+        }
+ /* CSS for all pages starts here*/   
+@media /*Tablet*/ only screen and (max-width: 1024px)
+/* CSS for Contact Page starts here*/
+    {
+        .contactInfo{
+            width: 400px;
+            font-size: 3vw;
+        }
+}
+ /* CSS for Contact Page ends here*/
+@media /*Mobile*/ only screen and (max-width: 786px)
+/* CSS for Contact Page starts here*/
+    {
+        .contactInfo{
+            width: 250px;
+            text-align: center;
+            font-size: calc(16px + 1vw);
+        }
+        .contactContainer{
+            display: inline-block;
+        }
+        .center{ 
+        text-align: center;
+        }
+}
+
+
+ /* CSS for Contact Page ends here*/
