@@ -1,67 +1,63 @@
-<p>Use the following form to add a new Guest to the database. </p>
+<body>
+	<p>Use the following form to add a new Guest to the database. </p>
 
-<form action="/admin/Person/create" method="POST">
-	<label for="name">First Name:</label>
-	<input type="text" name="firstName" id="firstName" placeholder="First Name" autofocus></input>
-	<br>
-	<br>
-	
-	<label for="lastName">Last Name:</label>
-	<input type="text" name="lastName" id="lastName" placeholder="Last Name" autofocus></input>
-	<br>
-	<br>
-	
-	<label for="email">Email Address:</label>
-	<input type="text" name="email" id="email"</input>
-	<br>
-	<br>
-	
-	<label for="phone">Home Phone:</label>
-	<input type="tel" name="phone" id="phone" placeholder="phone" maxlength="11"></input>
-	<br>
-	<br>
-	
-	<label for="cellPhone">Cell Phone:</label>
-	<input type="tel" name="cellPhone" id="cellPhone" placeholder="cellPhone" maxlength="11"></input>
-	<br>
-	<br>
-	
-	<label for="homeAddress">Home Address:</label>
-	<input type="text" name="homeAddress" id="homeAddress" placeholder="homeAddress"></input>
-	<br>
-	<br>
-	
-	<label for="city">City:</label>
-	<input type="text" name="city" id="city"></input>
-	<br>
-	<br>
-	
-	<label for="state">State:</label>
-	<input type="text" name="state" id="state"></input>
-	<br>
-	<br>
-	
-	<label for="zip">ZIP:</label>
-	<input type="text" name="zip" id="zip"></input>
-	<br>
-	<br>
-	
-	<label for="emergencyContact">Emergency Contact:</label>
-	<input type="text" name="emergencyContact" id="emergencyContact"></input>
-	<br>
-	<br>
-	
-	<label for="emergencyPhone">Emergency Phone Number:</label>
-	<input type="text" name="emergencyPhone" id="emergencyPhone"></input>
-	<br>
-	<br>
-	
-	<input type="submit" value="Add new Entry"><br>
-	
-</form>
-
-{{#if errors}}
-    {{#each errors}}
-	<p>{{this.msg}}</p>
-	{{/each}}
-	{{/if}}
+	<form action="/admin/Person/create" method="POST">
+		<label for="name">First Name:</label>
+		<input type="text" name="firstName" id="firstName" placeholder="First Name" autofocus></input>
+		<br>
+		<br>
+		
+		<label for="lastName">Last Name:</label>
+		<input type="text" name="lastName" id="lastName" placeholder="Last Name" autofocus></input>
+		<br>
+		<br>
+		
+		<label for="email">Email Address:</label>
+		<input type="text" name="email" id="email"</input>
+		<br>
+		<br>
+		
+		<label for="phone">Home Phone:</label>
+		<input type="tel" name="phone" id="phone" placeholder="phone" maxlength="11"></input>
+		<br>
+		<br>
+		
+		<label for="cellPhone">Cell Phone:</label>
+		<input type="tel" name="cellPhone" id="cellPhone" placeholder="cellPhone" maxlength="11"></input>
+		<br>
+		<br>
+		
+		<label for="homeAddress">Home Address:</label>
+		<input type="text" name="homeAddress" id="homeAddress" placeholder="homeAddress"></input>
+		<br>
+		<br>
+		
+		<label for="city">City:</label>
+		<input type="text" name="city" id="city"></input>
+		<br>
+		<br>
+		
+		<label for="state">State:</label>
+		<input type="text" name="state" id="state"></input>
+		<br>
+		<br>
+		
+		<label for="zip">ZIP:</label>
+		<input type="text" name="zip" id="zip"></input>
+		<br>
+		<br>
+		
+		<label for="emergencyContact">Emergency Contact:</label>
+		<input type="text" name="emergencyContact" id="emergencyContact"></input>
+		<br>
+		<br>
+		
+		<label for="emergencyPhone">Emergency Phone Number:</label>
+		<input type="tel" name="emergencyPhone" id="emergencyPhone"></input>
+		<br>
+		<br>
+		
+		<input type="submit" value="Add new Entry"><br>
+		
+	</form>
+</body>

@@ -14,4 +14,11 @@
 	<a href="/admin/Room">Rooms</a>
     {{{body}}}
   </body>
+  
+  {{#if errors}}
+    {{#each errors}}
+	<p>{{this.msg}}</p>
+	{{/each}}
+	{{/if}}
+	
 </html>
