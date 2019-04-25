@@ -6,6 +6,7 @@ var Registration = require('../controllers/registrationController');
 var Guest = require('../controllers/guestController');
 var Patient = require('../controllers/patientController');
 var Staff = require('../controllers/staffController');
+var Dashboard = require('../controllers/dashboardController');
 
 router.get('/', Dashboard.index); //landing page
 
@@ -123,5 +124,4 @@ router.get('/Staff/:id', Staff.staff_read);
 router.get('/Staff', Staff.staff_list)
 
 /////////////////////////////////////////////////////////////////////////////////////////////////
-
 module.exports = router;
