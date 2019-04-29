@@ -1,0 +1,16 @@
+<body>
+    <ul>
+        {{#if guest_list}}
+        {{#each guest_list}}
+        <li><a href={{url}}>{{name}}</a>
+            <a href="{{url}}/update">Edit Guest Information</a>
+        </li>
+        {{/each}}
+        {{else}}
+            <h2>
+                No Guest's Found
+            </h2>
+        {{/if}}
+    </ul>
+    <a href="/users/person/create">Create New Guest Record</a>
+</body>
