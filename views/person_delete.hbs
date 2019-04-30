@@ -14,6 +14,6 @@
     <p>Emergency Contact Phone Number: {{person.emergencyContactPhoneNumber}}</p>
 	<br>
 	<h3>Are you sure you want to delete this record? This action CANNOT be undone.</h3>
-	<form action="/catalog/Session/{{session._id}}/delete" method="POST">
+	<form action="/admin/Person/{{person._id}}/delete" method="POST">
 	<input type="submit" value="Delete Record"><br>
 </body>

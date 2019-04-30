@@ -1,0 +1,74 @@
+<body>
+	<p>You are currently editing registration data.</p>
+
+	<form action="{{url}}/update" method="POST">
+		<p>Guest Name: {{registration.guest}}</p>
+		
+		<br>
+		
+		<p>Patient Name: {{registration.patient}}</p>
+		
+		<br>
+		
+		<p>Patient Room: {{registration.patientLoc}}</p>
+		
+		<br>
+		
+		<p>Staff: Placeholder area for now. How is this working? Referencing a person object? Inputing a name? Something else?
+		
+		<br>
+		
+		<label for="checkIn">Check In Date: </label>
+		<input type="datetime-local" name="checkIn" id="checkIn" value="{{registration.checkIn}}">
+		
+		<br>
+		
+		<label for="checkOut">Check Out Date: </label>
+		<input type="datetime-local" name="checkOut" id="checkOut" value="{{registration.checkOut}}">
+		
+		<select size="1" name="room" id="room">
+		<option>Select a room...</option>
+		{{#if Room.roomNumber}}
+		{{#each Room.roomNumber}}
+		<option value="{{Room.roomNumber}}">{{Room.roomNumber}}</option>
+		{{/each}}
+		{{/if}}
+		
+		<br>
+		
+		<p>Select Deposit Type:</p>
+		<input type="radio" name="deposit" id="deposit" value="Check">Check<br>
+		<input type="radio" name="deposit" id="deposit" value="Cash">Cash<br>
+		<input type="radio" name="deposit" id="deposit" value="Credit">Credit<br>
+		
+		<br>
+		
+		<label for="numbKeys"># of Keys issued: </label>
+		<input type="text" name="numbKeys" id="numbKeys" value="{{registration.numbKeys}}">
+		
+		<br>
+		
+		<p>Items on Loan:</p><br>
+		<textarea name="loans" id="loans" cols="40" rows="4" value="{{registration.loans}}">Enter items on loan here</textarea>
+		
+		<br><br>
+		
+		<p>Comments:</p><br>
+		<textarea name="comments" id="comments" cols="40" rows="4" "{{registration.comments}}">Comments</textarea>
+		
+		<br>
+		
+		<label for="vehicle">Car Model: </label>
+		<input type="text" name="vehicle" id="vehicle" value="{{registration.vehicle}}">
+		
+		<br>
+		
+		<label for="plateNum">License Plate Number: </label>
+		<input type="text" name="plateNum" id="plateNum" value="{{registration.plateNum}}">
+		
+		<br>
+		
+		<input type="submit" value="Save Stay Details"><br>
+		
+	</form>
+</body>
