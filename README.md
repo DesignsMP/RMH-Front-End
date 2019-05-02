@@ -23,7 +23,6 @@ Front End for the Rebecca Morrison House
 <h3> All the contributions Gannon made to the project</h3>
     <ul>
         <li>Created Guest Page</li>
-        <li>Created Partials for Nav and Form</li>
 		<li>CSS and Bootstrap</li>
 		<li>Layout</li>
     </ul>
