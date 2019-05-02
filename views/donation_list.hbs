@@ -1,0 +1,16 @@
+<body>
+    <ul>
+        {{#if donation_list}}
+        {{#each donation_list}}
+        <li><a href={{url}}>{{name}}</a>
+            <a href="{{url}}/update">Edit Donation Entry Information</a>
+        </li>
+        {{/each}}
+        {{else}}
+            <h2>
+                No Donation Entries Found
+            </h2>
+        {{/if}}
+    </ul>
+    <a href="/users/donation/create">Create New Donation Entry</a>
+</body>
