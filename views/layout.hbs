@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>{{title}}</title>
     <link rel='stylesheet' href='/stylesheets/../RMH.css' />
@@ -26,11 +26,12 @@
       </nav>
     
     {{{body}}}
+	
+	<footer class="container-fluid text-center">Rebecca Morrison House     123 Address     Place, ST 12345   <a href="tel:888-555-5555">(555) 555-5555</a><br>
+Copyright &copy; 2019 Title<br></footer>
+
   </body>
     
-<footer class="container-fluid text-center">Rebecca Morrison House     123 Address     Place, ST 12345   <a href="tel:888-555-5555">(555) 555-5555</a><br>
-Copyright &copy; 2019 Title<br></footer>
-  
   {{#if errors}}
     {{#each errors}}
 	<p>{{this.msg}}</p>
