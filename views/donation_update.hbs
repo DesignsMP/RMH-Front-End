@@ -1,39 +1,39 @@
 <body>
-	<p>You are currently editing a donations's records. Click "Update Records" to save changes.</p>
+	<p>You are currently editing a donation entry's records. Click "Update Records" to save changes.</p>
 
 	<form action="{{url}}/update" method="POST">
 		<label for="name">First Name:</label>
-		<input type="text" name="firstName" id="firstName" placeholder="required" value="{{person.firstName}}" autofocus></input>
+		<input type="text" name="firstName" id="firstName" placeholder="Required" value="{{donation.firstName}}" autofocus></input>
 		<br>
 		<br>
 		
 		<label for="lastName">Last Name:</label>
-		<input type="text" name="lastName" id="lastName" placeholder="required" value="{{person.lastName}}" autofocus></input>
+		<input type="text" name="lastName" id="lastName" placeholder="Required" value="{{donation.lastName}}" autofocus></input>
 		<br>
 		<br>
 		
-		<label for="email">Donation Type:</label>
-		<input type="text" name="email" id="email" placeholder="Required" value="{{person.email}}"</input>
+		<label for="donationType">Donation Type:</label>
+		<input type="text" name="donationType" id="donationType" placeholder="Required" value="{{donation.donationType}}"</input>
 		<br>
 		<br>
 		
-		<label for="phone">Donation Date:</label>
-		<input type="tel" name="phone" id="phone" placeholder="" maxlength="11" value="{{person.phone}}"></input>
+		<label for="donationDate">Donation Date:</label>
+		<input type="date" name="donationDate" id="donationDate" value="{{donation.donationDate}}"></input>
 		<br>
 		<br>
 		
-		<label for="cellPhone">Donation Amount:</label>
-		<input type="tel" name="cellPhone" id="cellPhone" placeholder="Required" maxlength="11" value="{{person.cellPhone}}"></input>
+		<label for="donationAmount">Donation Amount:</label>
+		<input type="text" name="donationAmount" id="donationAmount" placeholder="Required" value="{{donation.donationAmount}}"></input>
 		<br>
 		<br>
 		
-		<label for="homeAddress">Adoption Date:</label>
-		<input type="text" name="homeAddress" id="homeAddress" placeholder="" value="{{person.homeAddress}}"></input>
+		<label for="adoptionDate">Adoption Date:</label>
+		<input type="date" name="adpotionDate" id="adoptionDate" value="{{donation.adoptionDate}}"></input>
 		<br>
 		<br>
 		
-		<label for="city">Adoption Message:</label>
-		<input type="text" name="city" id="city" value="{{person.city}}"></input>
+		<label for="adoptionMessage">Adoption Message:</label>
+		<input type="text" name="adoptionMessage" id="adoptionMessage" value="{{donation.adoptionMessage}}"></input>
 		<br>
 		<br>
 		
