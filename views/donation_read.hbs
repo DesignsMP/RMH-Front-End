@@ -5,6 +5,6 @@
 <p>Donation Amount: {{donation.donationAmount}}</p>
 <p>Adoption Date: {{donation.adoptionDate}}</p>
 <p>Adoption Message: {{donation.adoptionMessage}}</p>
-	
-<a href="{{donation.url}}/delete">Delete Donation Records</a>
-<a href="{{donation.url}}/update">Update Donation Records</a>
+
+<input type="button" value="Update Donations" class="btn-info" onclick="window.location.href='{{donation.url}}/update'">
+<input type="button" value="Delete Records" class="btn-info" onclick="window.location.href='{{donation.url}}/delete'">

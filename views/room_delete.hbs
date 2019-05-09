@@ -3,5 +3,5 @@
 <p>Room Number: {{room.roomNumber}}</p>
 <p>Handicapped?: {{room.handicapAccess}}</p>
 <p>Status: {{room.status}}</p>
-<form action="/admin/Room/{{room._id}}/delete" method="POST">
-<input type="submit" value="Delete Current Room?"><br>
+<form action="{{room.url}}/delete" method="POST">
+<input type="submit" value="Delete Current Room?" class="btn-info><br>

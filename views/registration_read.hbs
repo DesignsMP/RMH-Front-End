@@ -4,7 +4,7 @@
 <p>Staff: {{registration.staff}}</p>
 <p>Check-In Date: {{registration.checkIn}}</p>
 <p>Check-Out Date: {{registration.checkOut}}</p>
-<p>Room #: {{registration.room}}</p>
+<p>Room #: {{registration.room.roomNumber}}</p>
 <p>Deposit Type: {{registration.deposit}}</p>
 <p>Number of Rented Keys: {{registration.numbKeys}}</p>
 <p>Car Model: {{registration.vehicle}}</p>
@@ -12,5 +12,5 @@
 <p>Items on Loan: {{registration.loans}}</p>
 <p>Comments: {{registration.comments}}</p>
 
-<a href="{{registration.url}}/delete">Delete stay Record</a>
-<a href="{{registration.url}}/update">Update stay Record</a>
+<input type="button" value="Update Stay Details" class="btn-info" onclick="window.location.href='{{registration.url}}/update'">
+<input type="button" value="Delete Stay Details" class="btn-info" onclick="window.location.href='{{registration.url}}/delete'">

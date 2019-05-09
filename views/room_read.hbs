@@ -3,3 +3,6 @@
 <p>Handicapped?: {{room.handicapAccess}}</p>
 <p>Status: {{room.status}}</p>
 <a href='/admin/Room/'>Return to list</a>
+
+<input type="button" value="Edit Details" class="btn-info" onclick="window.location.href='{{room.url}}/update'">
+<input type="button" value="Delete" class="btn-info" onclick="window.location.href='{{room.url}}/delete'">

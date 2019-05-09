@@ -1,11 +1,7 @@
-<form action="/admin/Room/{{_id}}/update" method="POST">
+<form action="{{room.url}}/update" method="POST">
 	<input name="_id" type="hidden" id="_id" value={{_id}}>
 	<label for="roomNumber">Room Number:</label><br>
-	<input name="roomNumber" type="number" id="roomNumber" value="{{data.roomNumber}}"><br><br>
-
-	<!--<label for="building">Building Num:</label><br>
-	<input type="radio" name="building" value="1">Building 1<br>
-	<input type="radio" name="building" value="2">Building 2<br>-->
+	<input name="roomNumber" type="number" id="roomNumber" value="{{room.roomNumber}}"><br><br>
 	
 	<label for="handicapAccess">Handicap Access:</label><br>
 	<input type="radio" name="handicapAccess" value="Yes">Yes<br>
@@ -17,6 +13,6 @@
 	<input type="radio" name="status" value="Unavailable">Unavailable<br>
 	<input type="radio" name="status" value="Other">Other<br>
 	
-	<input type="submit" value="Update Room"><br>
+	<input type="submit" value="Update Room" class="btn-info"><br>
 		
 </form>
