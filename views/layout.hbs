@@ -1,36 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>{{title}}</title>
-    <link rel='stylesheet' href='/stylesheets/../RMH.css' />
+    <link rel='stylesheet' href="stylesheets/RMH.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <style>
+        body{
+        margin: 25px 50px;
+    }
+      </style>
   </head>
   <body>
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">Rebecca Morrison House</a>
-    </div>
-    <ul class="nav navbar-nav">
-      <li><a href="/">Home</a></li>
-	  <li><a href="/admin/Person">Guests</a></li>
-	  <li><a href="/admin/Registration">Registration</a></li>
-	  <li><a href="/admin/Donation">Finances</a></li>
-	  <li><a href="/admin/Patient">Patients</a></li>
-	  <li><a href="/admin/Staff">Volunteers</a></li>
-	  <li><a href="/admin/Room">Rooms</a></li>
-    </ul>
-  </div>
-      </nav>
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">Rebecca Morrison House</a>
+			</div>
+			<ul class="nav navbar-nav">
+				<li><a href="/">Home</a></li>
+				<li><a href="/admin/Person">Guests</a></li>
+				<li><a href="/admin/Registration">Registration</a></li>
+				<li><a href="/admin/Donation">Finances</a></li>
+				<li><a href="/about">About Us</a></li>
+				<li><a href="/admin/Staff">Volunteers</a></li>
+				<li><a href="/admin/Room">Rooms</a></li>
+			</ul>
+		</div>
+	</nav>
     
     {{{body}}}
+	
+	<footer class="container-fluid text-center">Rebecca Morrison House &mdash; 123 Address &mdash; Salina, KS 67401 &mdash; <a href="tel:785-452-7500">(785) 452-7500</a><br> Copyright &copy; 2019 Title<br></footer>
+
   </body>
     
-<footer class="container-fluid text-center">Rebecca Morrison House     123 Address     Place, ST 12345   <a href="tel:888-555-5555">(555) 555-5555</a><br>
-Copyright &copy; 2019 Title<br></footer>
-  
   {{#if errors}}
     {{#each errors}}
 	<p>{{this.msg}}</p>
