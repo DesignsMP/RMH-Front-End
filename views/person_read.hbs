@@ -9,7 +9,7 @@
 <p>Emergency Contact: {{person.emergencyContact}}</p>
 <p>Emergency Contact Phone Number: {{person.emergencyContactPhoneNumber}}</p>
 
-<a href="{{person.url}}/delete">Delete Guest Records</a>
-<a href="{{person.url}}/update">Update Guest Records</a>
+<input type="button" value="Edit Details" class="btn-info" onclick="window.location.href='{{person.url}}/update'">
+<input type="button" value="Delete" class="btn-info" onclick="window.location.href='{{person.url}}/delete'">
 
 {{registration_list}}

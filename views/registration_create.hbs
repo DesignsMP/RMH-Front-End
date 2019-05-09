@@ -1,43 +1,39 @@
 <p>Use the following form to add a new registration to the guest's record.</p>
 
 <form action="/admin/Registration/create" method="POST">
-	<p>Guest Name: {{registration.guest}}</p>
+	<p>Guest Name: {{guest}}</p>
 	
 	<br>
-	
-	<p>Patient Name: {{registration.patient}}</p>
-	
-	<br>
-	
-	<p>Patient Room: {{registration.patientLoc}}</p>
-	
-	<br>
-	
-    <label>Staff:</label> Placeholder area for now. How is this working? Referencing a person object? Inputing a name? Something else?
+	<label for="patient">Patient Name:</label><br>
+	<input name="patient" type="text" id="patient"><br>
+        
+	<label for="patientLoc">Patient Room:</label><br>
+	<input name="patientLoc" type="text" id="patientLoc"><br> 
 	
 	<br>
 	
 	<label for="checkIn">Check In Date: </label>
-	<input type="datetime-local" name="checkIn" id="checkIn">
-	
+	<input name="checkIn" type="Date" id="checkIn"><br>
+	<br>
 	<br>
 	
 	<label for="checkOut">Check Out Date: </label>
-	<input type="datetime-local" name="checkOut" id="checkOut">
+	<input type="Date" name="checkOut" id="checkOut">
+	
+	<br>
+	<br>
 	
 	<select size="1" name="room" id="room">
 	<option>Select a room...</option>
-	{{#if Room.roomNumber}}
-	{{#each Room.roomNumber}}
-	<option value="{{Room.roomNumber}}">{{Room.roomNumber}}</option>
+	{{#each rooms}}
+		<option value="{{name}}">{{name}}</option>
 	{{/each}}
-	{{/if}}
+	</select>
 	
+	<br>
 	<br>
 	
 	<p>Select Deposit Type:</p>
-    <br>
-    <br>
 	<input type="radio" name="deposit" id="deposit" value="Check">Check<br>
 	<input type="radio" name="deposit" id="deposit" value="Cash">Cash<br>
 	<input type="radio" name="deposit" id="deposit" value="Credit">Credit<br>
@@ -49,12 +45,12 @@
 	
 	<br>
 	
-        <label>Items on Loan:</label><br>
+	<p>Items on Loan:</p><br>
 	<textarea name="loans" id="loans" cols="40" rows="4">Enter items on loan here</textarea>
 	
 	<br><br>
 	
-        <label>Comments:</label><br>
+	<p>Comments:</p><br>
 	<textarea name="comments" id="comments" cols="40" rows="4">Comments</textarea>
 	
 	<br>
@@ -69,6 +65,10 @@
 	
 	<br>
 	
-	<input type="submit" value="Add new Stay"><br>
+	<p>Staff: Placeholder area for now. How is this working? Referencing a person object? Inputing a name? Something else?
+	
+	<br>
+	
+	<input type="submit" value="Add new Stay" class="btn-info"><br>
 	
 </form>
