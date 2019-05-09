@@ -1,10 +1,32 @@
-<ul>
+<table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Room Number</th>
+        <th>Handicap Accessibility</th>
+        <th>Room Status</th>
+        <th></th>
+      </tr>
+    </thead>
     {{#if room_list}}
     {{#each room_list}}
-    <li><a href="/admin/Room/{{_id}}">{{Room}}</a> | <a href="/admin/Room/{{_id}}/update">Update</a>  <a href="/admin/Room/{{_id}}/delete">Delete</a></li>
+    <tr>
+        <td>
+			{{Number}}
+		</td>
+		<td>
+			{{Handi}}
+		</td>
+		<td>
+			{{Stat}}
+		</td>
+		<td>
+			<input type="button" value="More Details" class="btn-info" onclick="window.location.href='{{url}}'">
+		</td>
+	</tr>
     {{/each}}
     {{else}}
         <h1>No Rooms Available</h1>
     {{/if}}
-</ul>
-<a href="/admin/Room/create">Create New Room</a>
+</table>
+
+<input type="button" value="Add Room" class="btn-info" onclick="window.location.href='/admin/Room/create'">

@@ -1,14 +1,38 @@
-<ul>
-	{{#if guest_list}}
+<table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Last Name</th>
+        <th>First Name</th>
+        <th>Email</th>
+        <th>Cell Phone</th>
+        <th></th>
+      </tr>
+    </thead>
+    {{#if guest_list}}
 	{{#each guest_list}}
-	<li><a href={{url}}>{{name}}</a>
-		<a href="{{url}}/update">Edit Guest Information</a>
-	</li>
+	<tr>
+        <td>
+            {{Last_name}}
+        </td>
+        <td>
+			{{First_name}}
+        </td>
+        <td>
+			{{emailAddress}}
+        </td>
+        <td>
+			{{Cell_Phone}}
+        </td>
+        <td>
+            <input type="button" value="More Details" class="btn-info" onclick="window.location.href='{{url}}'">
+        </td>
+    </tr>
 	{{/each}}
 	{{else}}
 		<h2>
 			No Guest's Found
 		</h2>
 	{{/if}}
-</ul>
-<a href="/users/person/create">Create New Guest Record</a>
+</table>
+
+<input type="button" value="New Guest" class="btn-info" onclick="window.location.href='/users/person/create'">

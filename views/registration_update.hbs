@@ -4,18 +4,11 @@
 	<p>Guest Name: {{registration.guest}}</p>
 	
 	<br>
-	
-	<p>Patient Name: {{registration.patient}}</p>
-	
-	<br>
-	
-	<p>Patient Room: {{registration.patientLoc}}</p>
-	
-	<br>
-	
-	<p>Staff: Placeholder area for now. How is this working? Referencing a person object? Inputing a name? Something else?
-	
-	<br>
+	<label for="patient">Patient Name:</label><br>
+	<input name="patient" type="text" id="patient" value="{{registration.patient}}"><br>
+        
+	<label for="patientLoc">Patient Room:</label><br>
+	<input name="patientLoc" type="text" id="patientLoc" value="{{registration.patientLoc}}"><br> 
 	
 	<label for="checkIn">Check In Date: </label>
 	<input type="datetime-local" name="checkIn" id="checkIn" value="{{registration.checkIn}}">
@@ -67,6 +60,10 @@
 	
 	<br>
 	
-	<input type="submit" value="Save Stay Details"><br>
+	<p>Staff: Placeholder area for now. How is this working? Referencing a person object? Inputing a name? Something else?
+	
+	<br>
+	
+	<input type="submit" value="Save Stay Details" class="btn-info"><br>
 	
 </form>

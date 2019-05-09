@@ -1,6 +1,6 @@
 <p>You are currently editing a donation entry's records. Click "Update Records" to save changes.</p>
 
-<form action="{{url}}/update" method="POST">
+<form action="{{donation.url}}/update" method="POST">
 	<label for="name">First Name:</label>
 	<input type="text" name="firstName" id="firstName" placeholder="Required" value="{{donation.firstName}}" autofocus></input>
 	<br>
@@ -36,6 +36,6 @@
 	<br>
 	<br>
 	
-	<input type="submit" value="Update Records"><br>
+	<input type="submit" value="Update Records" class="btn-info"><br>
 	
 </form>
