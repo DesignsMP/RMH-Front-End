@@ -1,38 +1,40 @@
 <p>You are currently editing a donation entry's records. Click "Update Records" to save changes.</p>
 
 <form action="{{donation.url}}/update" method="POST">
-	<label for="name">First Name:</label>
-	<input type="text" name="firstName" id="firstName" placeholder="Required" value="{{donation.firstName}}" autofocus></input>
+	<p>Guest Name: {{name}}</p>
+
+	<!--<label for="name">First Name:</label>
+	<input type="text" name="firstName" id="firstName" placeholder="Required" value="{{donation.firstName}}" autofocus>
 	<br>
 	<br>
 	
 	<label for="lastName">Last Name:</label>
-	<input type="text" name="lastName" id="lastName" placeholder="Required" value="{{donation.lastName}}" autofocus></input>
+	<input type="text" name="lastName" id="lastName" placeholder="Required" value="{{donation.lastName}}" autofocus>-->
 	<br>
 	<br>
 	
 	<label for="donationType">Donation Type:</label>
-	<input type="text" name="donationType" id="donationType" placeholder="Required" value="{{donation.donationType}}"</input>
+	<input type="text" name="donationType" id="donationType" placeholder="Required" value="{{donation.donationType}}">
 	<br>
 	<br>
 	
 	<label for="donationDate">Donation Date:</label>
-	<input type="date" name="donationDate" id="donationDate" value="{{donation.donationDate}}"></input>
+	<input type="date" name="donationDate" id="donationDate" value="{{donation.donationDate}}">
 	<br>
 	<br>
 	
 	<label for="donationAmount">Donation Amount:</label>
-	<input type="text" name="donationAmount" id="donationAmount" placeholder="Required" value="{{donation.donationAmount}}"></input>
+	<input type="text" name="donationAmount" id="donationAmount" placeholder="Required" value="{{donation.donationAmount}}">
 	<br>
 	<br>
 	
 	<label for="adoptionDate">Adoption Date:</label>
-	<input type="date" name="adpotionDate" id="adoptionDate" value="{{donation.adoptionDate}}"></input>
+	<input type="date" name="adpotionDate" id="adoptionDate" value="{{donation.adoptionDate}}">
 	<br>
 	<br>
 	
 	<label for="adoptionMessage">Adoption Message:</label>
-	<input type="text" name="adoptionMessage" id="adoptionMessage" value="{{donation.adoptionMessage}}"></input>
+	<input type="text" name="adoptionMessage" id="adoptionMessage" value="{{donation.adoptionMessage}}">
 	<br>
 	<br>
 	
