@@ -1,8 +1,8 @@
 <p>Use the following form to add a new registration to the guest's record.</p>
 
 <form action="/admin/Registration/create" method="POST">
-	<p>Guest Name: {{guest}}</p>
-	
+	<p>Guest Name: {{guests.name}}</p>
+	<input name="guest" type="hidden" id="guest" value="{{guests._id}}">
 	<br>
 	<label for="patient">Patient Name:</label><br>
 	<input name="patient" type="text" id="patient"><br>
@@ -26,7 +26,7 @@
 	<select size="1" name="room" id="room">
 	<option>Select a room...</option>
 	{{#each rooms}}
-		<option value="{{name}}">{{name}}</option>
+		<option value="{{_id}}">{{Number}}</option>
 	{{/each}}
 	</select>
 	
@@ -65,7 +65,8 @@
 	
 	<br>
 	
-	<p>Staff: Placeholder area for now. How is this working? Referencing a person object? Inputing a name? Something else?
+	<label for="staff">Staff Initials: </label>
+	<input type="text" name="staff" id="staff">
 	
 	<br>
 	

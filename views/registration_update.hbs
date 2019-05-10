@@ -1,31 +1,37 @@
 <p>You are currently editing registration data.</p>
 
-<form action="{{url}}/update" method="POST">
+<form action="{{registration.url}}/update" method="POST">
 	<p>Guest Name: {{registration.guest}}</p>
+	<input name="guest" type="hidden" id="guest" value="{{registration.guest._id}}">
 	
 	<br>
 	<label for="patient">Patient Name:</label><br>
 	<input name="patient" type="text" id="patient" value="{{registration.patient}}"><br>
-        
+	
 	<label for="patientLoc">Patient Room:</label><br>
 	<input name="patientLoc" type="text" id="patientLoc" value="{{registration.patientLoc}}"><br> 
 	
+	<br>
+	
 	<label for="checkIn">Check In Date: </label>
 	<input type="datetime-local" name="checkIn" id="checkIn" value="{{registration.checkIn}}">
-	
+	<br>
 	<br>
 	
 	<label for="checkOut">Check Out Date: </label>
 	<input type="datetime-local" name="checkOut" id="checkOut" value="{{registration.checkOut}}">
 	
+	<br>
+	<br>
+	
 	<select size="1" name="room" id="room">
 	<option>Select a room...</option>
-	{{#if Room.roomNumber}}
-	{{#each Room.roomNumber}}
-	<option value="{{Room.roomNumber}}">{{Room.roomNumber}}</option>
+	{{#each rooms}}
+		<option value="{{_id}}">{{Number}}</option>
 	{{/each}}
-	{{/if}}
+	</select>
 	
+	<br>
 	<br>
 	
 	<p>Select Deposit Type:</p>
@@ -60,7 +66,8 @@
 	
 	<br>
 	
-	<p>Staff: Placeholder area for now. How is this working? Referencing a person object? Inputing a name? Something else?
+	<label for="staff">Staff Initials: </label>
+	<input type="text" name="staff" id="staff" value="{{registration.staff}}">
 	
 	<br>
 	
