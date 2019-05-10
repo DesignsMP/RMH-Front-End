@@ -1,0 +1,14 @@
+<ul>
+	{{#if registration_list}}
+	{{#each registration_list}}
+	<li><a href={{url}}>{{name}}</a>
+		<a href="{{url}}/update">Edit Record Information</a>
+	</li>
+	{{/each}}
+	{{else}}
+		<h2>
+			This Guest hasn't stayed here yet.
+		</h2>
+	{{/if}}
+</ul>
+<a href="/users/registration/create">Start New Stay Record</a>

@@ -1,0 +1,14 @@
+<h2>Please Carefully Review before Deleting</h2>
+<p>You are about to delete ALL of a donation entry's records from the database. A view of the information this record contains is listed below. If you delete this record, the action cannot be undone.<p>
+
+<p>First Name: {{donation.firstName}}</p>
+<p>Last Name: {{donation.lastName}}</p>
+<p>Donation Type: {{donation.donationType}}</p>
+<p>Donation Date: {{donation.donationDate}}</p>
+<p>Donation Amount: {{donation.donationAmount}}</p>
+<p>Adoption Date: {{donation.adoptionDate}}</p>
+<p>Adoption Message: {{donation.adoptionMessage}}</p>
+<br>
+<h3>Are you sure you want to delete this record? This action CANNOT be undone.</h3>
+<form action="/catalog/Session/{{session._id}}/delete" method="POST">
+<input type="submit" value="Delete Record"><br>

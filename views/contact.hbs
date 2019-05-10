@@ -1,0 +1,12 @@
+<ul>
+	{{#if staff_list}}
+	{{#each staff_list}}
+	<div class="contactInfo"><a href={{url}}>{{name}}</a>
+	</div>
+	{{/each}}
+	{{else}}
+		<h2>
+			No Staff Members Found
+		</h2>
+	{{/if}}
+</ul>

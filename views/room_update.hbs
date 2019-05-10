@@ -1,6 +1,5 @@
-<p>Use the following form to add a new room</p>
-
-<form action="/admin/Room/create" method="POST">
+<form action="/admin/Room/{{_id}}/update" method="POST">
+	<input name="_id" type="hidden" id="_id" value={{_id}}>
 	<label for="roomNumber">Room Number:</label><br>
 	<input name="roomNumber" type="number" id="roomNumber" value="{{data.roomNumber}}"><br><br>
 
@@ -18,7 +17,6 @@
 	<input type="radio" name="status" value="Unavailable">Unavailable<br>
 	<input type="radio" name="status" value="Other">Other<br>
 	
-	<input type="submit" value="Add Room"><br>
-	
-	
+	<input type="submit" value="Update Room"><br>
+		
 </form>

@@ -1,0 +1,46 @@
+<style>
+    body{
+        margin: 25px 50px;
+    }
+    
+</style>
+
+<table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Last Name</th>
+        <th>First Name</th>
+        <th>Email</th>
+        <th>Cell Phone</th>
+        <th></th>
+      </tr>
+    </thead>
+    {{#if guest_list}}
+	{{#each guest_list}}
+	<tr>
+        <td>
+            {{last}}
+        </td>
+        <td>
+        {{first}}
+        </td>
+        <td>
+        {{1email}}
+        </td>
+        <td>
+        {{1cellPhone}}
+        </td>
+        <td>
+            <input type="button" value="Edit" class="btn-info" onclick="window.location.href='{{url}}/update'">
+        </td>
+    </tr>
+	{{/each}}
+	{{else}}
+		<h2>
+			No Guest's Found
+		</h2>
+	{{/if}}
+</table>
+
+
+<input type="button" value="New Guest" class="btn-info" onclick="window.location.href='/users/person/create'">
