@@ -11,5 +11,9 @@
 
 <input type="button" value="Edit Details" class="btn-info" onclick="window.location.href='{{person.url}}/update'">
 <input type="button" value="Delete" class="btn-info" onclick="window.location.href='{{person.url}}/delete'">
+<input type="button" value="New Registration" class="btn-info" onclick="window.location.href='admin/registration/{{person._id}}/create'">
+<br>
+<br>
+<input type="button" value="Return to List" class="btn-info" onclick="window.location.href='/admin/Person'">
 
 {{registration_list}}

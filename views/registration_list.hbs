@@ -1,14 +1,32 @@
-<ul>
-	{{#if registration_list}}
-	{{#each registration_list}}
-	<li><a href={{url}}>{{name}}</a>
-		<a href="{{url}}/update">Edit Record Information</a>
-	</li>
-	{{/each}}
-	{{else}}
-		<h2>
-			This Guest hasn't stayed here yet.
-		</h2>
-	{{/if}}
-</ul>
+<table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Guest</th>
+        <th>Check-In</th>
+        <th>Check-Out</th>
+        <th></th>
+      </tr>
+    </thead>
+    {{#if registration_list}}
+    {{#each registration_list}}
+    <tr>
+        <td>
+			{{name}}
+		</td>
+		<td>
+			{{checkedIn}}
+		</td>
+		<td>
+			{{checkedOut}}
+		</td>
+		<td>
+			<input type="button" value="More Details" class="btn-info" onclick="window.location.href='{{url}}'">
+		</td>
+	</tr>
+    {{/each}}
+    {{else}}
+        <h1>No Registration Records</h1>
+    {{/if}}
+</table>
+
 <input type="button" value="New Registration" class="btn-info" onclick="window.location.href='/admin/Registration/create'">

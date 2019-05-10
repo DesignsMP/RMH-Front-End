@@ -1,9 +1,9 @@
-<p>Guest Name: {{registration.guest}}</p>
+<p>Guest Name: {{registration.guest.name}}</p>
 <p>Patient Name: {{registration.patient}}</p>
 <p>Patient Room: {{registration.patientLoc}}</p>
 <p>Staff: {{registration.staff}}</p>
-<p>Check-In Date: {{registration.checkIn}}</p>
-<p>Check-Out Date: {{registration.checkOut}}</p>
+<p>Check-In Date: {{registration.checkedIn}}</p>
+<p>Check-Out Date: {{registration.checkedOut}}</p>
 <p>Room #: {{registration.room.roomNumber}}</p>
 <p>Deposit Type: {{registration.deposit}}</p>
 <p>Number of Rented Keys: {{registration.numbKeys}}</p>
@@ -14,3 +14,7 @@
 
 <input type="button" value="Update Stay Details" class="btn-info" onclick="window.location.href='{{registration.url}}/update'">
 <input type="button" value="Delete Stay Details" class="btn-info" onclick="window.location.href='{{registration.url}}/delete'">
+<input type="button" value="Check-Out" class="btn-info" onclick="window.location.href='{{registration.url}}/update'">
+<br>
+<br>
+<input type="button" value="Return to List" class="btn-info" onclick="window.location.href='/admin/registration'">
