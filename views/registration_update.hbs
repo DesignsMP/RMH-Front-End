@@ -1,7 +1,7 @@
 <p>You are currently editing registration data.</p>
 
 <form action="{{registration.url}}/update" method="POST">
-	<p>Guest Name: {{registration.guest}}</p>
+	<p>Guest Name: {{registration.guest.name}}</p>
 	<input name="guest" type="hidden" id="guest" value="{{registration.guest._id}}">
 	
 	<br>

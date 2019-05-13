@@ -1,17 +1,7 @@
 <p>You are currently editing a donation entry's records. Click "Update Records" to save changes.</p>
 
 <form action="{{donation.url}}/update" method="POST">
-	<p>Guest Name: {{name}}</p>
-
-	<!--<label for="name">First Name:</label>
-	<input type="text" name="firstName" id="firstName" placeholder="Required" value="{{donation.firstName}}" autofocus>
-	<br>
-	<br>
-	
-	<label for="lastName">Last Name:</label>
-	<input type="text" name="lastName" id="lastName" placeholder="Required" value="{{donation.lastName}}" autofocus>-->
-	<br>
-	<br>
+	<p>Guest Name: {{donation.guest.name}}</p>
 	
 	<label for="donationType">Donation Type:</label>
 	<input type="text" name="donationType" id="donationType" placeholder="Required" value="{{donation.donationType}}">
