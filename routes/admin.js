@@ -94,7 +94,7 @@ router.get('/Donation/:id', Donation.donation_read);
 
 router.get('/Donation', Donation.donation_list)
 
-//Guest Routes
+/*//Guest Routes
 ///////////////////////////////////////////////
 
 router.get('/Guest/create', Guest.guest_create_get);
@@ -149,7 +149,7 @@ router.post('/Staff/:id/update', Staff.staff_update_post);
 
 router.get('/Staff/:id', Staff.staff_read);
 
-router.get('/Staff', Staff.staff_list)
+router.get('/Staff', Staff.staff_list);*/
 
 /////////////////////////////////////////////////////////////////////////////////////////////////
 module.exports = router;
